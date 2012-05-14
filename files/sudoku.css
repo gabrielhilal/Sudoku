@@ -1,0 +1,206 @@
+/*Define body*/
+body {
+	margin: 0;
+	padding: 0;
+	color: #000000; 
+    background-color: #ffffff;
+	font-size: 1em;
+}
+
+/*Define header*/
+header {
+	margin: 1% auto;
+	padding: 0.5% 0;
+	width: 98%;
+	text-align: center;
+	background: #92BA8F;
+	border-radius: 10px;
+}
+  header h1, h2, h3 {
+	line-height: 0.7em;
+  }
+  header h1 {
+	font-size: 1.3em;
+  }
+  header h2 {
+	font-size: 1.2em;
+  }
+  header h3 {
+	font-size: 1.1em;
+  }
+
+/*Define navigation - left column*/
+nav {
+	float: left;
+	margin-left: 1%;
+	padding: 1%;
+	width: 15%;
+	background: #92BA8F;
+	border-radius: 10px;
+}
+  nav h1 {
+	font-size: 1.1em;
+  }
+  nav ul {
+	margin: 0;;
+	padding: 0;;
+  }
+  nav li {
+	list-style: none;
+	margin: 3%;
+	padding: 3%;
+	background: #000000;
+	border: #000000 solid;
+	border-width: 1px;
+  }
+  nav a {
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	display: block;
+  }
+
+/*Define section - central column and sudoku grid*/
+section {
+	float: left;
+	margin: 0 5% 1% 5%;
+	padding: 3%;
+    width: 43%;
+	text-align: center;
+	background: #92BA8F;
+	border-radius: 10px;
+}
+  section ul {
+	margin: 0;;
+	padding: 0;;
+  }
+  section li {
+	list-style: none;
+    float: left;
+	width: 45%;
+	margin: 1% 1% 0;
+	padding: 1%;
+	background: #000000;
+	border: #000000 solid;
+	border-width: 1px;
+  }
+  section a {
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	display: block;
+  }
+  /*SUDOKU GRID - Parent is a block with nine Child (each cell)*/
+  .grid33Parent { 
+    float: left;
+	margin-top: 2px;
+	padding: 0;
+	width: 33.33%;
+  } 
+  .grid33Child { 
+      float: left;
+	  margin: 0;
+	  padding: 0;
+      width: 33.33%;
+  } 
+  .clear {
+	clear: both;
+  }
+  /*Adjust the sudoku cells*/
+  input {
+	width: 92%;
+	height: 100%;
+	padding: 0 4%;
+	margin: 1%;
+	text-align: center;
+	background: #ffffff;
+	border: #000000 solid;
+	border-width: 1px;
+	font-size: 1.8em;
+  }
+
+/*Define aside - right column*/
+aside {
+	float: right;
+	margin: 0 1% 1% 0;
+	padding: 1%;
+	width: 20%;
+	background: #92BA8F;
+	border-radius: 10px;
+}
+  aside h1 {
+	font-size: 1.1em;
+  }
+  aside ul {
+	margin: 0;;
+	padding: 0;;
+  }
+  aside li {
+	list-style: none;
+    float: left;
+	width: 28%;
+	margin: 1% 1% 0;
+	padding: 1%;
+	background: #000000;
+	border: #000000 solid;
+	border-width: 1px;
+  }
+  aside a {
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	display: block;
+  }
+  .aside2 ul {
+	margin: 0;;
+	padding: 0;;
+  }
+  .aside2 li {
+	list-style: none;
+    width: 90%;
+	margin: 3%;
+	padding: 3%;
+	background: #000000;
+	border: #000000 solid;
+	border-width: 1px;
+  }
+  .aside2 a {
+	text-decoration: none;
+	text-align: left;
+	color: #ffffff;
+	display: block;
+  }
+
+/*Define footer*/
+footer {
+	clear: both;
+	margin: 0 auto;
+	padding: 1%;
+	width: 96%;
+	background: #92BA8F;
+	border-radius: 10px;
+}
+  footer p {
+	margin-top: 0;
+	margin-bottom: 0;
+  }
+  #logos {
+	float:left;
+  }
+  #logos img{
+	width: 40px;
+  }
+  #date {
+	float:right;
+	text-align: right;
+  }
+  #date a {
+	color: #404040;
+	font-weight: bold;
+  }
+  .small {
+	font-size: 0.9em;
+	color: #404040;
+  }
+
+

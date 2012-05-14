@@ -1,0 +1,68 @@
+/*Define body*/
+body {
+	margin: 0;
+	padding: 0;
+	color: #000000; 
+    background-color: #ffffff;
+	font-size: 1em;
+}
+
+/*Define header*/
+header {
+    width: 90%;
+	padding: 5%;}
+
+/*Define navigation - left column*/
+nav {
+	display: none;
+}
+
+/*Define section - central column and sudoku grid*/
+section {
+    width: 90%;
+	padding: 5%;
+}
+  section ul {
+	display: none;	
+  }
+
+  /*SUDOKU GRID - Parent is a block with nine Child (each cell)*/
+  .grid33Parent { 
+    float: left;
+	margin-top: 2px;
+	padding: 0;
+	width: 33.33%;
+  } 
+  .grid33Child { 
+    float: left;
+	margin: 0;
+	padding: 0;
+    width: 33.33%;
+  } 
+  .clear {
+	clear: both;
+  }
+  /*Adjust the sudoku cells*/
+  input {
+	width: 92%;
+	height: 100%;
+	padding: 0 4%;
+	margin: 1%;
+	text-align: center;
+	background: #ffffff;
+	border: #000000 solid;
+	border-width: 1px;
+	font-size: 1.8em;
+  }
+
+/*Define aside - right column*/
+aside {
+	display: none;
+}
+
+/*Define footer*/
+footer {
+    display: none;
+}
+
+

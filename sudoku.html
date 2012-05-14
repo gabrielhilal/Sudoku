@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Gabriel Delucis Hilal - K0935109</title>
+  <link rel="stylesheet" type="text/css" href="files/sudoku.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="files/sudoku_print.css" media="print"/>
+  <script type="text/javascript" src="files/sudoku.js" ></script>
+  <meta charset="UTF-8" />
+</head>
+<body>
+
+  <header>
+    <h1>A Web-based Sudoku Game for Everybody</h1>
+    <h2>Gabriel Delucis Hilal - K0935109</h2>
+  </header>
+  
+  <nav>
+  	<h1>Select Game Level</h1>
+    <ul>
+      <li><a href="javascript:void(0)" onclick="LoadPuzzle(1);">Easy</a></li>
+      <li><a href="javascript:void(0)" onclick="LoadPuzzle(2);">Normal</a></li>
+      <li><a href="javascript:void(0)" onclick="LoadPuzzle(3);">Hard</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h1>Sudoku</h1>
+    
+    <form>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="1"	id="1" 	tabindex="1"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="2" 	id="2" 	tabindex="2"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="3" 	id="3" 	tabindex="3"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="10" id="10" tabindex="10"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="11" id="11" tabindex="11"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="12" id="12" tabindex="12"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="19" id="19" tabindex="19"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="20" id="20" tabindex="20"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="21" id="21" tabindex="21"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="4" 	id="4" 	tabindex="4"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="5" 	id="5" 	tabindex="5"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="6" 	id="6" 	tabindex="6"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="13" id="13" tabindex="13"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="14" id="14" tabindex="14"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="15" id="15" tabindex="15"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="22" id="22" tabindex="22"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="23" id="23" tabindex="23"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="24" id="24" tabindex="24"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="7" 	id="7" 	tabindex="7"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="8" 	id="8" 	tabindex="8"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="9" 	id="9" 	tabindex="9"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="16" id="16" tabindex="16"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="17" id="17" tabindex="17"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="18" id="18" tabindex="18"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="25" id="25" tabindex="25"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="26" id="26" tabindex="26"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="27" id="27" tabindex="27"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="clear"></div>   
+ 
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="28"	id="28" tabindex="28"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="29" id="29" tabindex="29"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="30" id="30" tabindex="30"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="37" id="37" tabindex="37"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="38" id="38" tabindex="38"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="39" id="39" tabindex="39"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="46" id="46" tabindex="46"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="47" id="47" tabindex="47"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="48" id="48" tabindex="48"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="31" id="31" tabindex="31"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="32" id="32" tabindex="32"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="33" id="33" tabindex="33"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="40" id="40" tabindex="40"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="41" id="41" tabindex="41"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="42" id="42" tabindex="42"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="49" id="49" tabindex="49"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="50" id="50" tabindex="50"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="51" id="51" tabindex="51"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="34" id="34" tabindex="34"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="35" id="35" tabindex="35"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="36"	id="36" tabindex="36"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="43" id="43" tabindex="43"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="44" id="44" tabindex="44"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="45" id="45" tabindex="45"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="52" id="52" tabindex="52"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="53" id="53" tabindex="53"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="54" id="54" tabindex="54"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="clear"></div> 
+    
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="55"	id="55" tabindex="55"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="56" id="56" tabindex="56"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="57" id="57" tabindex="57"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="64" id="64" tabindex="64"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="65" id="65" tabindex="65"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="66" id="66" tabindex="66"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="73" id="73" tabindex="73"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="74" id="74" tabindex="74"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="75" id="75" tabindex="75"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="58" id="58" tabindex="58"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="59" id="59" tabindex="59"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="60" id="60" tabindex="60"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="67" id="67" tabindex="67"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="68" id="68" tabindex="68"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="69" id="69" tabindex="69"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="76" id="76" tabindex="76"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="77" id="77" tabindex="77"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="78" id="78" tabindex="78"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="grid33Parent">
+      <div class="grid33Child"><input type="text" name="61" id="61" tabindex="61"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="62" id="62" tabindex="62"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="63"	id="63" tabindex="63"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="70" id="70" tabindex="70"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="71" id="71" tabindex="71"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="72" id="72" tabindex="72"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="clear"></div>
+      <div class="grid33Child"><input type="text" name="79" id="79" tabindex="79"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="80" id="80" tabindex="80"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+      <div class="grid33Child"><input type="text" name="81" id="81" tabindex="81"	onblur="CheckValue(this)"	onfocus="getID(this.id)"/></div>
+    </div>
+    <div class="clear"></div> 
+    </form>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="Reload();">Reset Puzzle</a></li>
+        <li><a href="javascript:void(0)" onclick="CheckCell();">Check Selected Cell</a></li>
+      </ul>
+  </section>
+  
+  <aside>
+    <h1>Font Size</h1>
+      <ul>
+        <li><a href="javascript:void(0)" title="Increase Font Size" onclick="IncreaseFont();">A+</a></li>
+        <li><a href="javascript:void(0)" title="Decrease Font Size" onclick="DecreaseFont();">A-</a></li>
+        <li><a href="javascript:void(0)" title="Reset Font Size" onclick="ResetFont();">Reset</a></li>
+      </ul>
+  </aside>
+
+  <aside class="aside2">
+    <h1>Colour Theme</h1>
+      <ul>
+        <li><a href="javascript:void(0)" title="Black and White Theme" onclick="BlackWhite();">Light (B/W)</a></li>
+        <li><a href="javascript:void(0)" title="High Contrast Theme" onclick="HighContrast();">High Contrast</a></li>
+        <li><a href="javascript:void(0)" title="Default Theme" onclick="DefaultTheme();">Default</a></li>
+      </ul>
+  </aside>
+  
+  <footer>
+  	<div id="logos">
+      <img src="files/html5.png" alt="HTML5 Logo" />
+      <img src="files/css3.png" alt="CSS3 Logo" />
+    </div>
+    <div id="date">
+      <p>Current Date and Time: <strong><span id="current_date"></span></strong></p><br />
+      <p class="small">This page is part of an assignment for CO3060 - Advanced Techniques in Web Design at <a href="www.kingston.ac.uk">Kingston University</a></p>
+    </div>
+    <div class="clear"></div>
+  </footer>
+
+</body>
+</html>
