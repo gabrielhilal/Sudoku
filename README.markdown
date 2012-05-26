@@ -1,7 +1,10 @@
-# CO3060 – Advanced Techniques in Web Design
-## A Web-Based Sudoku Game for Everybody
-### Gabriel Delucis Hilal - K0935109
+# A Web-Based Sudoku Game for Everybody
+## Gabriel Delucis Hilal
 
-Application available at: [*http://www.gabrielhilal.com/CO3060/*](http://www.gabrielhilal.com/CO3060/)
+<strong>Technology:</strong> HTML5 | CSS3 | JavaScript
+
+<strong>Summary:</strong> Application developed as part of an assignment for <em>CO3060–Advanced Techniques in Web Design</em> at [*Kingston University*](http://www.kingston.ac.uk).
+
+<strong>Application available at:</strong> [*http://www.gabrielhilal.com/CO3060/*](http://www.gabrielhilal.com/CO3060/)
 
 
