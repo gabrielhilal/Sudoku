@@ -4,6 +4,6 @@
 
 <strong>Summary:</strong> Application developed as part of an assignment for <em>CO3060–Advanced Techniques in Web Design</em> at [*Kingston University*](http://www.kingston.ac.uk).
 
-<strong>Application available at:</strong> [*http://www.gabrielhilal.com/CO3060/*](http://www.gabrielhilal.com/CO3060/)
+<strong>Application available at:</strong> [*http://sudoku-app.herokuapp.com/)
 
 
