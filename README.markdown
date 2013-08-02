@@ -1,5 +1,4 @@
-# A Web-Based Sudoku Game for Everybody
-## Gabriel Delucis Hilal
+#### A Web-Based Sudoku Game for Everybody
 
 <strong>Technology:</strong> HTML5 | CSS3 | JavaScript
 
